@@ -38,5 +38,14 @@ def lasso_word(word, shift_amount):
     # The decoded_word is sent back to th eline of code that invoked this function
     return decoded_word
 
-# Try to decode the word "terra"
-print("Shifting terra by 13 gives: \n" + lasso_word("terra", 13))
+# Try to decode the secret, encoded message
+print("Shifting Ncevy by 13 gives: \n" + lasso_word("Ncevy", 13))
+print("Shifting gpvsui by 25 gives: \n" + lasso_word("gpvsui", 25))
+print("Shifting ugflgkg by -18 gives: \n" + lasso_word("ugflgkg", -18))
+print("Shifting wjmmf by -1 gives: \n" + lasso_word("wjmmf", -1))
+
+# Additional challenges for your decrypt code
+# As an added challenge, you can explore how to:
+#   Maintain casing for each letter throughout the decoding process.
+#   Create a function to read in an entire message without having to print each word individually.
+#   Modify your decoder to include numbers.
