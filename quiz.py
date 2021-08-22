@@ -1,20 +1,11 @@
-print("Hello, Contosoville!")
-# this is a comment that won't be interpreted as a command
+# ask the candidate a question
+activity = input("How would you like to spend your evening?\n(A) Reading a book\n(B) Attending a party\n")
 
-# use a variable named year to "remember" the value 1990
-year = 1990
+# print out which activity they chose
+print(f"You chose {activity}.")
 
-# print a message to see what year it is
-print(f"The year is {year}...")
-
-year = year + 36
-
-# print a message to see what year it is now
-print(f"The year is now {year}...")
-
-# if we're in 1990
-if year == 1990:
-    print("I left you a message on your answering machine!")
-# if we're in 2026
-if year == 2026:
-    print("I sent you a text message!")
+# if they chose reading a book
+if activity == "A":
+    print("Nice choice!")
+elif activity == "B":
+    print("Nice choice!")
