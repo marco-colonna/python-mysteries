@@ -1,3 +1,16 @@
+# ask the candidate the question until they choose "A" or "B"
+def get_answer(index):
+    while True:
+        answer = input(questions[index])
+        if answer == "A":
+            print(response_A[index])
+        elif answer == "B":
+            print(response_B[index])
+        else:
+            print("You must type A or B, please try again.\n")
+            continue
+        return answer
+
 # stores the quiz questions
 questions = ["How would you like to spend your evening?\n(A) Reading a book\n(B) Attending a party\n",
             "What's your dream job?\n(A) Curator at the Smithsonian\n(B) Running a business\n",
@@ -20,16 +33,8 @@ response_B = ["Attending a party? Sounds fun!\n",
             "Flying? I hope you like airplanes!\n"]
 
 # ask the candidate each question of the quiz
-for index, question in enumerate(questions):
-    answer = input(question)
-    if answer == "A":
-        print(response_A[index])
-    elif answer == "B":
-        print(response_B[index])
-    else:
-        print("You must type A or B, let's just say you chose A.\n")
-        answer = "A"
-    answers += answer
+for index in range(len(questions)):
+    answers += get_answer(index)
 
 # print out their choices
 print(f"You chose {answers[0]}, then {answers[1]}, then {answers[2]}, then {answers[3]}, then {answers[4]}.\n")
@@ -99,4 +104,4 @@ else:
 # More challenges for your quiz code
 # As an added challenge, you can start exploring how you might:
 #   Reduce the number of if, elif, and else statements in your code. -> DONE
-#   Allow users to select a new choice if they didn't enter A or B.
+#   Allow users to select a new choice if they didn't enter A or B. -> DONE
