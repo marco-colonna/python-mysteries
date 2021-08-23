@@ -112,3 +112,8 @@ elif kai_like >= 3:
     print( "You're most like Keen Kai!" )
 else:
     print( "You're most like Inquisitive Indy!" )
+
+# More challenges for your quiz code
+# As an added challenge, you can start exploring how you might:
+#   Reduce the number of if, elif, and else statements in your code.
+#   Allow users to select a new choice if they didn't enter A or B.
