@@ -1,6 +1,6 @@
 # Use Python basics to solve mysteries and find answers
 
-My work from following the Microsoft Docs Learning Path [Use Python basics to solve mysteries and find answers](https://docs.microsoft.com/en-us/learn/paths/python-partnership/).
+My work from following the Microsoft Learn learning path [Use Python basics to solve mysteries and find answers](https://docs.microsoft.com/en-us/learn/paths/python-partnership/).
 
 *Completed on 8/22/2021.*
 
