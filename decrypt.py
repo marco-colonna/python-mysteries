@@ -7,6 +7,15 @@ def lasso_letter(letter, shift_amount):
     # The ASCII number representation of lowercase letter 'a'
     a_ascii = ord('a')
 
+    # Maintain casing for each letter throughout the decoding process.
+    if letter.isupper():
+        # Invoke the ord function to translate the letter to its ASCII code
+        # Save the code to the letter_code variable
+        letter_code = ord(letter.upper())
+
+        # The ASCII number representation of uppercase letter 'a'
+        a_ascii = ord('A')
+
     # The number of letters in the alphabet
     alphabet_size = 26
 
@@ -35,7 +44,7 @@ def lasso_word(word, shift_amount):
         # The decoded_letter value is added to the end of the decoded_word value
         decoded_word = decoded_word + decoded_letter
 
-    # The decoded_word is sent back to th eline of code that invoked this function
+    # The decoded_word is sent back to the line of code that invoked this function
     return decoded_word
 
 # Try to decode the secret, encoded message
@@ -46,6 +55,6 @@ print("Shifting wjmmf by -1 gives: \n" + lasso_word("wjmmf", -1))
 
 # Additional challenges for your decrypt code
 # As an added challenge, you can explore how to:
-#   Maintain casing for each letter throughout the decoding process.
+#   Maintain casing for each letter throughout the decoding process. -> DONE
 #   Create a function to read in an entire message without having to print each word individually.
 #   Modify your decoder to include numbers.
